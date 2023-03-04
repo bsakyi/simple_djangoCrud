@@ -27,11 +27,7 @@
 {% endif %}
 <br>
 <a href={% url 'home' %} class="btn  btn-primary">Back </a>
+<a href={% url 'update_record' customer_record.id %} class="btn btn-secondary" id="deleteRec">Update</a>
 <a href={% url 'delete' customer_record.id %} class="btn btn-danger" id="deleteRec">Delete</a>
 {% endblock %}
 
-<script>
-
-    Window.alert("Welcocme");
-
-</script>
